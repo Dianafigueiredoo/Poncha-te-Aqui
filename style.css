@@ -1,0 +1,181 @@
+:root {
+  --azul-escuro: #1f2a44;
+  --azul-claro: #2a375a;
+  --cinza-texto: #6c757d;
+  --fundo: #fafafa;
+}
+
+/* ===== HEADER PERSONALIZADO ===== */
+
+header.topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background: #fff;
+}
+
+.logo-area img {
+  height: 70px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--azul-escuro); /* azul escuro, como querias */
+  font-weight: 500;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.registar-btn {
+  background-color: var(--azul-escuro);
+  color: #fff !important;
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+  color: var(--azul-escuro);
+}
+
+.hero-section {
+  padding: 80px 0;
+}
+
+.hero-section h1 {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.hero-subtitle {
+  color: var(--cinza-texto);
+  margin-bottom: 32px;
+}
+
+.hero-form {
+  background-color: var(--azul-escuro);
+  border-radius: 18px;
+  padding: 28px;
+  color: #fff;
+  max-width: 420px;
+}
+
+.hero-form label {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.hero-form .form-control {
+  background-color: #2a375a;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.hero-form .form-control::placeholder {
+  color: #cfd3dc;
+}
+
+.hero-form .form-control:focus {
+  box-shadow: none;
+  background-color: #2a375a;
+}
+
+.btn-search {
+  background-color: #f2f2f2;
+  color: var(--azul-escuro);
+  font-weight: 700;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+.btn-search:hover {
+  background-color: #e6e6e6;
+}
+
+.hero-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.hero-images img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+.hero-images img:first-child {
+  grid-row: span 2;
+  height: 456px;
+}
+
+@media (max-width: 991px) {
+  .hero-form {
+    max-width: 100%;
+  }
+
+  .hero-images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-images img:first-child {
+    grid-row: span 1;
+    height: 220px;
+  }
+}
+.hero-form {
+  background-color: var(--azul-escuro);
+  border-radius: 20px;
+  padding: 28px;
+  color: #fff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  max-width: 420px;
+}
+
+.benefit-card {
+  background: #fff;
+  padding: 32px 24px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  height: 100%;
+}
+
+.benefit-icon {
+  font-size: 32px;
+  color: var(--azul-escuro);
+  margin-bottom: 16px;
+}
+
+.benefit-card h5 {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.benefit-card p {
+  font-size: 14px;
+  color: var(--cinza-texto);
+}
+
+.alojamento-titulo {
+  margin-top: 100px;   /* isto resolve o header a “comer” o título */
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--azul-escuro);
+}
